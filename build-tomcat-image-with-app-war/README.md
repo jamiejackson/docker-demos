@@ -1,7 +1,7 @@
 # Overview
 
 * Builds a custom image, with an application's WAR baked into it ([Dockerfile](./Dockerfile)), based on the [official Tomcat image](https://hub.docker.com/_/tomcat/).
-* Runs the image (as a container).
+* Runs the container.
 
 ## Instructions
 
