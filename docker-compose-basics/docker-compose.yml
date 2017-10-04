@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+
+  example:
+    image: ubuntu
+    container_name: non-compose-example
+    volumes:
+      - ./host-volume:/tmp/shared
+    restart: unless-stopped
+    command: tail -f /dev/null
