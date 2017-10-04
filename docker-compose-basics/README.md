@@ -4,7 +4,7 @@ Intro to docker compose.
 
 ## Instructions
 
-### Without Compose
+### Container-written file persistence
 
 #### Files aren't persisted by default
 
