@@ -50,7 +50,7 @@ ls -l ./host-volume
 docker run --rm -d -v $(pwd)/host-volume:/tmp/shared --name=non-compose-example ubuntu tail -f /dev/null
 ```
 
-* `docker run` - Run a command in a container. (Many containers have default commands that can be overridden)
+* `docker run` - Run a command in a container. (Many images have default commands, and these can be overridden)
 * `--rm` - Remove the container when it's stopped. (The default is to keep it around, in a stopped state, so it would need to be cleaned up afterwards.)
 * `-d` - Run in "detached" mode. Otherwise, the stdout of the command streams to the console.
 * `-v $(pwd)/host-volume:/tmp/shared` - Share the hosts's `./host-volume` directory with the container, as `/tmp/shared` in the container. These example paths are arbitrary.
